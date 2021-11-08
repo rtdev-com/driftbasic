@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>DriftBasic Archive</title>
+	<meta name="author" content="Roman Taylor" />
+	<meta name="description" content="Grassroots Motorsports Blog - Archive." />
+	<meta name="keywords"  content="1995, 1996, 1997, 1998, 240sx, diy, fuel pump, kouki, s14, troubleshooting, zenki." />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
+	
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-weight: 700;
+        font-size: 6em;
+		font-family: 'Source Sans Pro', sans-serif;
+        letter-spacing: -1px;
+		color: #fff;
+		margin:0;
+	}
+    .intro h1 {
+        font-weight: 800;
+        font-size: 7em;
+        text-shadow: 0 0.3rem 0.9rem rgba(0,0,0,.4);
+        letter-spacing: -3px;
+		padding: 10px 0 0 0;
+    }
+	.intro p{
+		color: #fff;
+		width: 50%;
+        margin: 0 auto;
+        padding: 40px 0 0 0;
+        font-size: 1.5em;
+        text-shadow: -1px 1px 8px rgba(0,0,0,.8);
+        font-family: 'Source Sans Pro', sans-serif;
+	}
+	.wrap{
+		margin-left: auto;
+		margin-right: auto;
+		width: 980px;
+		position: relative;
+		padding: 20px 0 20px 0;
+        font-family: 'Source Sans Pro', sans-serif;
+	}
+	.wrap h1{
+		font-size: 2.3em;
+		color: #333;
+		padding: 30px 0 10px  0;
+	}
+    .wrap h2{
+        font-size: 1.7em;
+		color: rgb(68, 68, 68);
+		padding: 20px 0 8px  0;
+    }
+    .wrap h3{
+        font-size: 1em;
+		color: rgb(107, 107, 107);
+		padding: 10px 0 5px  0;
+    }
+	.wrap p{
+		font-size: 16px;
+		padding:  0 0 10px 0;
+	}
+	.box{
+		display: block;
+		background: #f2f2f2;
+		border:1px solid #ccc;
+		padding: 20px;
+		margin:20px 0;
+	}
+
+    /* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+    /*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-image: url(imgs/drift_basic.jpg);
+		padding: 6% 0 0 0;
+        filter: grayscale(50%);
+	}
+    #slide2{
+		background-image: url(imgs/goodtimes.jpg);
+		padding: 6% 0 0 0;
+        filter: grayscale(50%);
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+    /* Footer styling
+	* --------------------------------------- */
+    .footer{
+        text-align:center;
+        color:rgb(133, 133, 133);
+    }
+
+    .footer a{
+        color:rgb(216, 183, 36);
+        text-decoration: none;
+        letter-spacing: .12em;
+    }
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section" id="section0">
+		<div class="slide" id="slide1">
+            <div class="intro">
+			    <h1>DRIFTBASIC</h1>
+                <p>
+                    DriftBasic is a grassroots drifting community founded by Tommy Ferrence.
+                    Our mission is to help keep people off the streets by providing them with a safe and fun track experience.
+                </p>
+                <p>
+                    Most of our events were held at Darlington Dragway in Hartsville, SC
+                    between 2007 and 2016.
+                </p>
+                <p>
+                    Unfortunately we no longer run any events. 
+                </p>
+            </div>    
+		</div>
+        <div class="slide" id="slide2">
+            <div class="intro">
+                <h1>This website...</h1>
+                <p>
+                    ...is maintained for fun and to preserve history.
+                </p>
+                <p>
+                    Also, we wanted to keep our most visited page about
+                    <i>troubleshooting fuel system on a Nissan 240SX</i>.
+                    Scroll down to see it.
+                </p>
+
+            </div>
+		</div>
+	</div>
+</div>
+
+<div class="wrap">
+	<h1>Troubleshooting 1995-98 S14 Fuel Pump/Relay Issues</h1>
+    <h3>Originally posted on January 1, 2013 by Roman Taylor.</h3>
+
+	This should help you diagnose fuel issues on your Nissan 240SX. Use at your own risk, and make sure you have a multimeter (along with other common tools) before attempting this.
+
+	<h2>Three main failure points:</h2>
+    <ul>
+        <li>Fuel Pump</li>
+        <li>Fuel Pump Relay</li>
+        <li>ECU</li>
+      </ul> 
+
+    <h2>Fuel Pump Plug:</h2>
+    <p>Few things you can check for here:</p>
+	<ul>
+        <li>First check for 12V at the plug with key in the ON position, if you’re getting 12V -> fuel pump is likely bad</li>
+        <li>Check for continuity between plug terminal B (the one with black wire going to it) and chassis</li>
+        <li>Check for continuity between plug terminal A and Pin 5 on your Fuel Pump Relay</li>
+      </ul> 
+      <img src="/imgs/fuel_pump_1.jpg" alt="Fuel Pump Power and Ground Photo">
+
+    <h2>Fuel Pump Relay Location (Driver Side Kick Panel):</h2>
+    <p>
+        You’ll see another blue and black relays next to it under driver side kick panel, it’s the one that has four black wires going to it.
+        Simple test you can do before taking out the relay, is to hold it in your hand and turn the key into ON position without starting the car – if they relay is good, you should feel it click
+    </p>
+    <img src="/imgs/fuel_pump_2.jpg" alt="Fuel Pump Relay Photo">
+
+    <h2>Fuel Pump Relay Plug and Fuse:</h2>
+    <p>Don’t forget to check your fuse if you haven’t already done so.</p>
+    <ul>
+        <li>Pin #1 gets power from Ignition Switch, so you should see 12V with key in the ON position</li>
+        <li>Pin #2 is ground signal from ECU, it can be verified by checking for continuity between Pin #2 and a ground point while key is in the ON position (it will only work for couple seconds after turning the key)</li>
+        <li>Pin #3 is power source from battery. It is wired to your 15 AMP Fuel Pump Fuse</li>
+        <li>Pin #5 supplies power to your fuel pump so it should have continuity to Pin A on your fuel pump plug</li>
+      </ul> 
+      <img src="/imgs/fuel_pump_3.jpg" alt="Fuel Pump Fuse Photo">
+
+    <h2>Bench checking your relay:</h2>  
+    <p>Hook up Pin 1 and 2 to your battery (doesn’t matter which one goes to positive or negative).</p>
+    <p>Use your multimeter to check for continuity between Pin 3 and 5 – should have continuity with power applied.</p>
+    <img src="/imgs/fuel_pump_4.jpg" alt="Fuel Pump Relay Photo">
+
+    <p>Hope this helps!</p>
+
+    <div class="footer">
+        <p>Maintained by <a href="https://romantaylor.com">Roman Taylor</a>.</p>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../dist/fullpage.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage'],
+        sectionsColor: ['#4B6FB0'],
+        autoScrolling: false,
+        css3: true,
+        fitToSection: false,
+    });
+</script>
+
+</body>
+</html>
